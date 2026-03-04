@@ -38,6 +38,13 @@ in one ``np.memmap()`` call. This is effectively zero-copy with no Python-level 
 handles files of any size without loading them entirely into RAM.
 
 
+Ready-to-use arrays
+~~~~~~~~~~~~~~~~~~~
+
+fasthcc returns properly shaped ``(N, H, W)`` numpy arrays directly. TelopsToolbox returns
+flattened pixel data that requires a separate ``form_image(header, ir_data)`` call to reshape.
+
+
 Correctness
 ~~~~~~~~~~~
 
